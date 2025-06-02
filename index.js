@@ -1,13 +1,38 @@
 // Efecto de aparición al hacer scroll
   
 
-  const form = document.querySelector("form");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    form.innerHTML = "<p>🎉 ¡Gracias por registrarte! Te avisaremos pronto.</p>";
-    form.submit();
+
+<script>
+  const form = document.getElementById('myForm');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // evitar envío tradicional
+
+    const email = form.elements['email'].value;
+
+    // Crear objeto JSON
+    const data = { email };
+
+    fetch('https://formspree.io/f/xgvyeegw', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json' // informar que es JSON
+      },
+      body: JSON.stringify(data) // convertir el objeto a JSON
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('¡Formulario enviado con éxito!');
+        form.reset();
+      } else {
+        alert('Hubo un problema al enviar el formulario.');
+      }
+    })
+    .catch(error => {
+      alert('Error en el envío: ' + error.message);
+    });
   });
-  
+</script>
   
   document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('section');
