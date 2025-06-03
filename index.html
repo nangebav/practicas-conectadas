@@ -19,7 +19,29 @@
 
 <body>
   <!-- Encabezado con imagen de fondo -->
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="logo">Prácticas Conectadas</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#problema">Problema</a></li>
+      <li><a href="#solucion">Solución</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a href="#form">Registro</a></li>
+    </ul>
+  </div>
+</nav>
+
+
   <header>
+
+
+
+
     <div class="floating-icons">
       <div class="floating-icon" style="top: 10%; left: 5%;"><i class="fas fa-graduation-cap"></i></div>
       <div class="floating-icon" style="top: 30%; left: 90%;"><i class="fas fa-briefcase"></i></div>
@@ -31,31 +53,33 @@
       <h1>Prácticas Conectadas</h1>
       <p>Conectamos a estudiantes universitarios con oportunidades reales y confiables de prácticas profesionales</p>
       <a href="#form" class="cta-button" onclick="gtag('event', 'click', {
-  'event_category': 'registro',
-  'event_label': 'cta-banner'
-});">¡Regístrate para acceso anticipado!</a>
+        'event_category': 'registro',
+        'event_label': 'cta-banner'
+      });">¡Regístrate para acceso anticipado!</a>
     </div>
+
   </header>
 
-<section class="secondary-banner">
-  <div class="overlay">
-    <div class="banner-text">
-      <h2>Tu futuro profesional comienza hoy</h2>
-      <p>Más que una plataforma, somos un puente entre tus sueños y tu primer gran logro profesional.</p>
-      <p>Únete a cientos de estudiantes que ya están conectando con empresas reales, seguras y alineadas con su vocación.</p>
-      <a href="#form" class="cta-button"  onclick="gtag('event', 'click', {
-  'event_category': 'registro',
-  'event_label': 'cta-banner-secondary'
-});" >✨ Quiero empezar mi camino</a>
+  <section class="secondary-banner" >
+    <div class="overlay">
+      <div class="banner-text">
+        <h2>Tu futuro profesional comienza hoy</h2>
+        <p>Más que una plataforma, somos un puente entre tus sueños y tu primer gran logro profesional.</p>
+        <p>Únete a cientos de estudiantes que ya están conectando con empresas reales, seguras y alineadas con su vocación.</p>
+        <a href="#form" class="cta-button"  onclick="gtag('event', 'click', {
+    'event_category': 'registro',
+    'event_label': 'cta-banner-secondary'
+  });" >✨ Quiero empezar mi camino</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-  <div class="container">
+  <div class="container" >
+
     <!-- Sección del problema -->
-    <section class="problem-section">
+    <section class="problem-section" id="problema" >
       <h2><i class="fas fa-exclamation-triangle"></i> El problema</h2>
       <p>En el Perú, <strong>más del 70% de los estudiantes universitarios</strong> enfrenta dificultades significativas para encontrar prácticas profesionales que sean adecuadas, confiables y alineadas con su carrera profesional.</p>
       
@@ -83,7 +107,7 @@
     </section>
 
     <!-- Sección de solución -->
-    <section class="solution-section">
+    <section class="solution-section" id="solucion">
       <h2><i class="fas fa-lightbulb"></i> Nuestra solución</h2>
       <p>Prácticas Conectadas es una plataforma digital diseñada específicamente para conectar a estudiantes de últimos ciclos con empresas verificadas que ofrecen oportunidades reales de prácticas profesionales.</p>
       
@@ -127,57 +151,103 @@
 
     </section>
 
-
-
     <!-- Testimonios -->
-    <section>
+    <section id="testimonios"> 
       <h2><i class="fas fa-comment-dots"></i> Lo que dicen los estudiantes</h2>
-        <div class="testimonials">
-            <div class="testimonial">
-                <p>"Buscar prácticas fue una experiencia frustrante. Me sentía perdida entre portales desactualizados y estafas. Esta idea me parece necesaria y urgente."</p>
-                <div class="author">
-                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Camila Torres">
-                <div class="author-info">
-                    <h4>Camila Torres</h4>
-                    <p>Estudiante de Diseño Gráfico</p>
-                </div>
-                </div>
-            </div>
+      <div class="testimonials">
 
-            <div class="testimonial">
-                <p>"No tengo contactos y me cuesta encontrar buenas oportunidades. Me gustaría una plataforma donde pueda filtrar por carrera y horario." <br><br> </p>
-                <div class="author">
-                <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Luis Fernández">
-                <div class="author-info">
-                    <h4>Luis Fernández</h4>
-                    <p>Estudiante de Contabilidad</p>
-                </div>
-                </div>
+        <div class="testimonial">
+          <p>"Buscar prácticas fue una experiencia frustrante. Me sentía perdida entre portales desactualizados y estafas. Esta idea me parece necesaria y urgente."</p>
+          <div class="author">
+            <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Serious&skinColor=Light" 
+                alt="Camila Torres" width="60" height="60" style="border-radius: 50%;" />
+            <div class="author-info">
+              <h4>Camila Torres</h4>
+              <p>Estudiante de Diseño Gráfico</p>
             </div>
-
-            <div class="testimonial">
-                <p>"Hay muchas páginas pero no sé cuáles son confiables. Me gustaría que las universidades trabajen con plataformas como esta para asegurar prácticas válidas."</p>
-                <div class="author">
-                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Valeria Castro">
-                <div class="author-info">
-                    <h4>Valeria Castro</h4>
-                    <p>Estudiante de Comunicación Integral</p>
-                </div>
-                </div>
-            </div>
+          </div>
         </div>
 
+        <div class="testimonial">
+          <p>"No tengo contactos y me cuesta encontrar buenas oportunidades. Me gustaría una plataforma donde pueda filtrar por carrera y horario." <br> <br> </p>
+          <div class="author">
+            <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardMedium&clotheType=GraphicShirt&clotheColor=Gray01&eyeType=Default&eyebrowType=RaisedExcited&mouthType=Smile&skinColor=Light" 
+                alt="Luis Fernández" width="60" height="60" style="border-radius: 50%;" />
+            <div class="author-info">
+              <h4>Luis Fernández</h4>
+              <p>Estudiante de Contabilidad</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>"Hay muchas páginas pero no sé cuáles son confiables. Me gustaría que las universidades trabajen con plataformas como esta para asegurar prácticas válidas."</p>
+          <div class="author">
+            <img src="https://avataaars.io/?accessoriesType=Blank&avatarStyle=Circle&clotheColor=PastelGreen&clotheType=ShirtScoopNeck&eyeType=Wink&eyebrowType=UpDown&facialHairType=Blank&hairColor=Blonde&mouthType=Smile&skinColor=Light&topType=LongHairCurvy" 
+                alt="Valeria Castro" width="60" height="60" style="border-radius: 50%;" />
+            <div class="author-info">
+              <h4>Valeria Castro</h4>
+              <p>Estudiante de Comunicación Integral</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
+
 
     <!-- Sección Team -->
 
-    <section class="team-section">
-      <h2><i class="fas fa-users"></i> ¿Quiénes estamos detrás?</h2>
+    <section class="team-section" id="equipo" >
+      <h2><i class="fas fa-users"></i> ¿Quiénes somos?</h2>
       <p>Somos estudiantes comprometidos con mejorar el acceso a oportunidades reales de prácticas. Creemos en el poder de la tecnología para abrir puertas.</p>
+      
+      <div class="teams">
+        <div class="team">
+          <div class="members-grid">
+            
+            <div class="author">
+              <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Round&hairColor=Brown&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=Light" 
+                  alt="Katy Candy Veloz Huanca" width="80" height="80" style="border-radius: 50%;" />
+              <div class="author-info">
+                <h4>Katy Candy Veloz Huanca</h4>
+              </div>
+            </div>
+
+            <div class="author">
+              <img src="https://avataaars.io/?accessoriesType=Blank&avatarStyle=Circle&clotheColor=Blue03&clotheType=Hoodie&eyeType=Default&eyebrowType=Default&facialHairType=Blank&hairColor=Black&https%3A%2F%2Favataaars.io%2F%3FavatarStyle=Circle&mouthType=Twinkle&skinColor=Light&topType=ShortHairShortCurly" 
+                  alt="Ray Mendieta Palacios" width="80" height="80" style="border-radius: 50%;" />
+              <div class="author-info">
+                <h4>Ray Mendieta Palacios</h4>
+              </div>
+            </div>
+
+            <div class="author">
+              <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=Hoodie&clotheColor=PastelBlue&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light" 
+                  alt="Keyra Catherin Sandoval Toledo" width="80" height="80" style="border-radius: 50%;" />
+              <div class="author-info">
+                <h4>Keyra Catherin Sandoval Toledo</h4>
+              </div>
+            </div>
+
+            <div class="author">
+              <img src="https://avataaars.io/?accessoriesType=Prescription02&avatarStyle=Circle&clotheType=ShirtScoopNeck&eyeType=Default&eyebrowType=DefaultNatural&facialHairType=Blank&hairColor=Black&mouthType=Twinkle&skinColor=Light&topType=LongHairCurly" 
+                  alt="Nancy Angélica Bautista Vargas" width="80" height="80" style="border-radius: 50%;" />
+              <div class="author-info">
+                <h4>Nancy Angélica Bautista Vargas</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+   
     </section>
 
     <!-- Formulario -->
-    <section id="form" class="form-section">
+    <section class="form-section" id="form" >
       <h2><i class="fas fa-envelope"></i> ¡Sé de los primeros!</h2>
       <p>¿Te interesa probar esta plataforma? Déjanos tu correo y sé parte de los primeros en acceder cuando lancemos nuestra versión beta.</p>
       
