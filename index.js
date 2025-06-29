@@ -6,13 +6,7 @@
   }
 
 
-  const form = document.querySelector("form");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    form.innerHTML = "<p>🎉 ¡Gracias por registrarte! Te avisaremos pronto.</p>";
-    form.submit();
-  });
-  
+
   
   document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('section');
